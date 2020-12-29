@@ -1,0 +1,25 @@
+selection = input("choose a figure cylinder or sphere: ")
+if selection == "cylinder":
+    choose = input("what do you want to find total surface area or volume: ")
+    if choose == "total surface area":
+        radius = int(input("enter the radius of cylinder: "))
+        height = int(input("enter the height of cylinder: "))
+        print("the total surface area of cylinder is: ", 2*3.14*radius*height)
+    elif choose == "volume":
+        radius = int(input("enter the radius of cylinder: "))
+        height = int(input("enter the height of cylinder: "))
+        print("the volume of the cylinder is: ", 3.14*(radius**2)*height)
+    else:
+        print("ERROR CODE 1:choose any one from radius or total surface area OR check the spelling for the same")
+elif selection == "sphere":
+    choose = input("what do you want to find total surface area or volume: ")
+    if choose == "total surface area":
+        radius = int(input("enter the radius of sphere: "))
+        print("the total surface area of sphere is: ", 4 * 3.14 * (radius ** 2))
+    elif choose == "volume":
+        radius = int(input("enter the radius of sphere: "))
+        print("the volume of the sphere is: ", 4/3 * 3.14 * (radius ** 3))
+    else:
+        print("ERROR CODE 1:choose any one from radius or total surface area OR check the spelling for the same")
+else:
+    print("ERROR CODE 1:choose any one figure from cylinder or sphere OR check the spelling for the same")
