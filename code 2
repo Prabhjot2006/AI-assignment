@@ -1,0 +1,16 @@
+m = int(input("Enter the marks of maths(out of 20): "))
+m1 = int(input("Enter the marks of science(out of 20): "))
+m2 = int(input("Enter the marks of social(out of 20): "))
+m3 = int(input("enter the marks of AI(out of 20): "))
+m4 = int(input("enter the marks of english(out of 20): "))
+total = m + m1 + m2 + m3 + m4
+if total <= 100 and total >= 90:
+    print("your grade is A+.")
+elif total <= 90 and total >= 80:
+    print("your grade is A.")
+elif total <= 80 and total >= 50:
+    print("your grade is B.")
+elif total <= 50 and total >= 20:
+    print("your grade is C.")
+elif total <= 20 and total >= 0:
+    print("your grade is E.")
