@@ -1,0 +1,10 @@
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+print("the first number you entered is ", num1)
+print("the second number you entered is ", num2)
+c = num1 + num2
+num2 = c - num2
+num1 = c - num1
+print("after swaping the values both the number: ")
+print("\t", "the first number is ", num1)
+print("\t", "the second number is ", num2)
