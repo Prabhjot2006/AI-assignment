@@ -1,0 +1,25 @@
+selection = input("choose a figure circle or rectangle ?: ")
+if selection == "rectangle":
+    second_selection = input("what do you want to find perimeter or area: ")
+    if second_selection == "perimeter":
+        length = int(input("give the length of rectangle: "))
+        width = int(input("give the width of the rectangle: "))
+        print("the perimeter of the rectangle is: ", 2*(length+width))
+    elif second_selection == "area":
+        length = int(input("give the length of rectangle: "))
+        width = int(input("give the width of the rectangle: "))
+        print("the area of the rectangle is :",(length*width))
+    else:
+        print("ERROR CODE 1:choose any one from area or perimeter OR check the spelling for the same")
+elif selection == "circle":
+    second_selection = input("what do you want to find circumference or area: ")
+    if second_selection == "circumference":
+        radius = int(input("give the radius of the circle: "))
+        print("the circumference of circle is ", 2*3.14*radius)
+    elif second_selection == "area":
+        radius = int(input("give the radius of the circle: "))
+        print("the area of the circle is: ", 3.14*radius**2)
+    else:
+        print("ERROR CODE 1:choose any one from radius or circumference OR check the spelling for the same")
+else:
+    print("ERROR CODE 1:choose any one figure from rectangle or circle OR check the spelling for the same")
